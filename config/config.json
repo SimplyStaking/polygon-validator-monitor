@@ -1,0 +1,7 @@
+{
+    "ETHRpcUrl": "https://eth.drpc.org",
+    "PrometheusPort": "3030",
+    "DatabaseLocation": "data/checkpoint_data.db",
+    "PublicKeys": ["0x6d4d36a10b33713ad4f22b58477eaeaec1696b21"],
+    "ContinueFromBlock": 0
+}

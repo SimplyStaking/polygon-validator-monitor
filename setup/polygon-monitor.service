@@ -1,0 +1,13 @@
+[Unit]
+Description             = Polygon Checkpoint Monitor
+Wants                   = network-online.target
+
+[Service]
+User                    = monitoring
+WorkingDirectory        = /home/monitoring/polygon-validator-monitor/
+ExecStart               = /home/monitoring/polygon-validator-monitor/build/bin/polygon_monitor --config=/home/monitoring/polygon-validator-monitor/config/config.json
+Restart                 = always
+RestartSec              = 5s
+
+[Install]
+WantedBy                = multi-user.target
